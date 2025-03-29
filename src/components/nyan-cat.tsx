@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 "use client";
 import { cn } from "@/lib/utils";
 import React, { useEffect, useState } from "react";
@@ -7,6 +8,7 @@ import {
   animate,
   useAnimationControls,
 } from "framer-motion";
+import Image from "next/image"
 
 const getRandomHeight = () => {
   return `${Math.random() * 100}vh`;
@@ -91,10 +93,12 @@ const AnimatedDiv = ({
       onAnimationComplete={onCompleted}
       onClick={handlePause}
     >
-      <img
+      <Image
         src="/assets/nyan-cat.gif"
         className={cn("fixed z-10 h-40 w-auto")}
         alt="Nyan Cat"
+        width={500}
+        height={500}
       />
     </motion.div>
   );

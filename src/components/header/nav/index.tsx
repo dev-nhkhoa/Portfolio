@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/alt-text */
 import { useState } from "react";
 import { motion } from "framer-motion";
 import styles from "./style.module.scss";
@@ -45,6 +46,7 @@ const Index: React.FC<IndexProps> = ({ setIsActive }) => {
         <Image
           src={links[selectedLink.index].thumbnail}
           isActive={selectedLink.isActive}
+          
         />
         {/* <p>{links[selectedLink.index].thumbnail}</p> */}
       </div>
