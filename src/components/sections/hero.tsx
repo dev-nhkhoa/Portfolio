@@ -2,7 +2,7 @@ import { cn } from "@/lib/utils";
 import Link from "next/link";
 import React from "react";
 import { Button } from "../ui/button";
-import { File, Github, Linkedin } from "lucide-react";
+import { File } from "lucide-react";
 import {
   Tooltip,
   TooltipContent,
@@ -64,7 +64,7 @@ const HeroSection = () => {
                       side="top"
                       className="dark:bg-white dark:text-black"
                     >
-                      theres something waiting for you in devtools
+                      TRUONG NGUYEN ANH KHOA
                     </TooltipContent>
                   </Tooltip>
                 </BlurIn>
@@ -76,14 +76,14 @@ const HeroSection = () => {
                       "cursor-default font-display sm:text-xl md:text-xl whitespace-nowrap bg-clip-text "
                     )}
                   >
-                    A Full Stack Web Developer
+                    Business Analyst / Developer
                   </p>
                 </BlurIn>
               </div>
               <div className="mt-8 md:ml-2 flex flex-col gap-3">
                 <Link
                   href={
-                    "https://drive.google.com/file/d/1O97WCk2DrO9x6SHOqf7LvRbmHkMgGIb4/view?usp=sharing"
+                    "https://drive.google.com/drive/folders/1EIlhGt3oNy_6jFS9NfM1Sj0EJXRyAalI?dmr=1&ec=wgc-drive-globalnav-goto/view%3Fusp=sharing"
                   }
                   target="_blank"
                   className="flex-1"
@@ -107,9 +107,7 @@ const HeroSection = () => {
                         </Button>
                       </Link>
                     </TooltipTrigger>
-                    <TooltipContent side="bottom">
-                      <p>pls 🥹 🙏</p>
-                    </TooltipContent>
+                    
                   </Tooltip>
                   <Link
                     href={config.social.github}
